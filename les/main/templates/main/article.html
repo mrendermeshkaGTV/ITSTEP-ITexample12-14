@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <article class="d-flex justify-content-center flex-column" style="align-items: center;">
+        <h1>{{news.name}}</h1>
+        <div>
+            <img src="{{news.image.url}}" alt="{{news.name}}" style="max-width:50vw">
+        </div>
+        <p>{{news.content}}</p>
+    </article>
+{% endblock %}
+{% block title %}{{news.name}}{% endblock %}
